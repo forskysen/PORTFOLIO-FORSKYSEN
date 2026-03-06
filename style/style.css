@@ -200,3 +200,23 @@ main {
 }
 
 
+
+@media (max-width: 768px) {
+    .content__card {
+        width: 90%;
+        height: 60%;
+    }
+    
+    .nickname {
+        font-size: 1.6em;
+    }
+
+    .icon-menu {
+        gap: 3px;
+    }
+    
+    .overlay-content p {
+        font-size: 0.8em;
+    }
+
+}
