@@ -214,6 +214,9 @@ main {
     .icon-menu {
         gap: 3px;
     }
-
+    
+    .overlay-content {
+        font-size: 0.8em;
+    }
 
 }
