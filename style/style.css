@@ -215,7 +215,7 @@ main {
         gap: 3px;
     }
     
-    .overlay-content {
+    .overlay-content p {
         font-size: 0.8em;
     }
 
