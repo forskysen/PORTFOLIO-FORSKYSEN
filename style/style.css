@@ -86,7 +86,7 @@ main {
     background-color: rgba(102, 102, 102, 0.03);
     backdrop-filter: blur(10px);
     min-width: 40vw;
-    min-height: 50vh;
+    min-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +175,6 @@ main {
 }
 
 .icon-menu {
-    margin-top: 15px;
     display: flex;
     gap: 7px;
     flex-direction: row;
@@ -199,7 +198,34 @@ main {
     filter: drop-shadow(0 0 10px #ffffff);
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+.container__icon__menu {
+    position: relative;
+    z-index: 9;
+    background-color: rgba(102, 102, 102, 0.03);
+    backdrop-filter: blur(10px);
+    display: flex;
+    min-width: 40vw;
+    min-height: 7vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    overflow: hidden;
+    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.container__icon__menu.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 @media (max-width: 768px) {
     .content__card {
@@ -212,11 +238,20 @@ main {
     }
 
     .icon-menu {
-        gap: 3px;
+        gap: 7px;
+    }
+
+    .icon-menu i {
+        font-size: 1.6rem;
     }
     
     .overlay-content p {
         font-size: 0.8em;
     }
 
+    .container__icon__menu {
+        min-width: 35vh;
+    }
+
+    
 }

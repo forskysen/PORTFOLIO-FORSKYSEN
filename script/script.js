@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const video = document.getElementById('bgVideo');
     const overlay = document.getElementById('video-unlock');
     const card = document.getElementById('content-card')
+    const iconMenu = document.getElementById('container__icon__menu')
     video.pause();
 
     overlay.addEventListener('click', () =>{
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
         overlay.classList.add('hidden');
         setTimeout (() =>{
             card.classList.add('show')
+            iconMenu.classList.add('show')
         }, 200);
     });
 });
